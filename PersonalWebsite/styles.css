@@ -1,0 +1,182 @@
+/* General Styles */
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul.menu {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1200px;
+        }
+        nav ul.menu li {
+            flex: 1;
+            max-width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0 10px;
+        }
+        nav ul.menu li img {
+            width: 200px; /* Ancho fijo de 100px */
+            height: 200px; /* Altura fija de 100px */
+        }
+        nav ul.menu li span {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.2em;
+        }
+body {
+    font-family: 'Lora', serif; /* Tipografía elegante */
+    background-color: #f0f4f8; /* Fondo suave azul claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Asegura que el contenido ocupe toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Permite que el footer quede al final */
+}
+
+/* Header */
+header {
+    background: linear-gradient(180deg, #000000, #bcb3b1); /* Gradiente vibrante */
+    padding: 40px 0; /* Espaciado del encabezado */
+    text-align: center; /* Centra el contenido del encabezado */
+    color: #fff ; /* Texto en blanco para contraste */
+}
+
+header h1 {
+    font-size: 4em; /* Tamaño grande para el título */
+    margin: 0;
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+header p {
+    font-size: 1.5em; /* Subtítulo del encabezado */
+    margin-top: 10px;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    padding: 20px 0; /* Espaciado del menú */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Centra el menú horizontalmente */
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 30px; /* Espaciado entre los elementos del menú */
+    text-align: center; /* Centra el contenido dentro de cada elemento */
+}
+
+.menu a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Color del texto */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transiciones suaves para hover */
+}
+
+.menu img {
+    width: 100px; /* Ancho de las imágenes del menú */
+    height: 100px; /* Alto de las imágenes del menú */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+    transition: transform 0.3s ease; /* Transición suave para hover en la imagen */
+}
+
+.menu span {
+    display: block;
+    margin-top: 10px; /* Espaciado entre la imagen y el texto */
+    font-size: 1.2em; /* Tamaño de fuente del texto debajo de las imágenes */
+}
+
+/* Hover Effects */
+.menu a:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el cursor */
+}
+
+.menu a:hover span {
+    color: #000000; /* Cambia el color del texto al pasar el cursor */
+}
+
+/* Section Styles */
+section {
+    background: #ffffff; /* Fondo blanco para las secciones */
+    padding: 40px; /* Espaciado interno de las secciones */
+    margin: 20px auto; /* Márgenes automáticos para centrar la sección */
+    max-width: 1000px; /* Ancho máximo de la sección */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+    flex-grow: 1; /* Permite que la sección ocupe el espacio disponible */
+    text-align: center; /* Centra el contenido del texto */
+}
+
+section h1 {
+    font-size: 2.5em; /* Tamaño de los títulos de las secciones */
+    margin-bottom: 20px; /* Separación inferior del título */
+    color: #3498db; /* Color vibrante para los títulos */
+}
+
+section p {
+    font-size: 1.2em; /* Tamaño de fuente del párrafo */
+    color: #555; /* Color del texto del párrafo */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+}
+
+/* Footer Styles */
+footer {
+    background: #333; /* Fondo oscuro para el pie de página */
+    color: #fff; /* Color de texto claro para el pie de página */
+    text-align: center; /* Centra el texto del pie de página */
+    padding: 15px 0; /* Espaciado del pie de página */
+    width: 100%; /* Asegura que el pie de página ocupe todo el ancho */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombra en la parte superior del pie */
+    font-size: 1em; /* Tamaño de fuente del pie de página */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Menú vertical en pantallas pequeñas */
+    }
+
+    .menu li {
+        margin: 20px 0; /* Espaciado entre los elementos del menú en móvil */
+    }
+
+    header h1 {
+        font-size: 3em; /* Ajuste del tamaño del título en pantallas pequeñas */
+    }
+
+    header p {
+        font-size: 1.2em; /* Ajuste del tamaño del subtítulo en pantallas pequeñas */
+    }
+
+    section {
+        padding: 30px; /* Ajuste de padding para pantallas pequeñas */
+        margin: 15px; /* Ajuste de márgenes para pantallas pequeñas */
+    }
+}

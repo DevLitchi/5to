@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis pasatiempos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .hobbies-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+        .hobbies-container ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+        .hobbies-container ul li {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+            font-size: 1.2em;
+            line-height: 1.6em;
+            text-align: justify;
+        }
+        .hobbies-container ul li img {
+            margin-left: 20px;
+            width: 100px; /* Tamaño de la imagen al lado del texto */
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mis pasatiempos</h1>
+    </header>
+
+    <section>
+        <div class="hobbies-container">
+            <ul>
+                <li>Disfruto jugar videojuegos, Tetris siendo mi elección favorita para sesiones casuales.
+                    <img src="https://cdn.dribbble.com/users/4154326/screenshots/10882476/media/304c188ae3781c0e834f63283736458e.gif" alt="Icono de Tetris">
+                </li>
+                <li>Me gusta ver películas; entre mis preferidas se encuentran "Volver al Futuro" y "Django".
+                    <img src="https://media.tenor.com/0aZ0KUh4L2IAAAAM/back-to-the-future-future.gif" alt="Icono de películas">
+                </li>
+                <li>Me considero melómano; actualmente, mi canción favorita es "Mr. Internacional" de Tito Double P.
+                    <img src="https://media.tenor.com/VnPfcm6vmC0AAAAj/listening-to-music.gif" alt="Icono de música">
+                </li>
+                <li>Mi artista musical favorito es Wos, cuya música siempre me inspira.
+                    <img src="https://i.gifer.com/origin/bb/bbf08062c02fc626110d054c6b71c4aa_w200.gif" alt="Icono de Wos">
+                </li>
+                <li>También disfruto del ámbito competitivo en los videojuegos, donde me esfuerzo por alcanzar el máximo nivel antes de pasar a un nuevo juego.
+                    <img src="https://media0.giphy.com/media/xT4uQsqBaQgeD3tqzS/200w.gif?cid=6c09b952tq86cgrrxlgr0kxkifnypj1r088ceq8ktq47phgd&ep=v1_gifs_search&rid=200w.gif&ct=g" alt="Icono de videojuegos competitivos">
+                </li>
+            </ul>
+            <div style="padding: 20px; text-align: center;">
+                <button onclick="window.history.back()" style="padding: 10px 20px; font-size: 1.2em; cursor: pointer;">
+                    Regresar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DevLitchi. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+    

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .skills-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+        .skills-container ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+        .skills-container ul li {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+            font-size: 1.2em;
+            line-height: 1.6em;
+            text-align: justify;
+        }
+        .skills-container ul li img {
+            margin-left: 20px;
+            width: 100px; /* Size of the image next to the text */
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Skills</h1>
+    </header>
+
+    <section>
+        <div class="skills-container">
+            <ul>
+                <li>I am skilled in most video games
+                    <img src="https://media.tenor.com/4MnbPbSR5UMAAAAM/the-fairly-odd-parents-timmy.gif" alt="Video Games Icon">
+                </li>
+                <li>I have strong strategic skills
+                    <img src="https://media.tenor.com/u6LXOuXGKlEAAAAM/computing-confused.gif" alt="Strategy Icon">
+                </li>
+                <li>I have a knack for solving complex problems
+                    <img src="https://gifsec.com/wp-content/uploads/2022/12/fix-gif-1.gif" alt="Problem Solving Icon">
+                </li>
+                <li>Learning new things comes intuitively and is cognitively easy for me
+                    <img src="https://media3.giphy.com/media/Rl9Yqavfj2Ula/giphy.gif?cid=6c09b952kfrjzlvn84txvplgeza6i7i73mdh5cwb35rp9mq1&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Learning Icon">
+                </li>
+            </ul>
+            <div style="padding: 20px; text-align: center;">
+                <button onclick="window.history.back()" style="padding: 10px 20px; font-size: 1.2em; cursor: pointer;">
+                    Go back
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DevLitchi. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
