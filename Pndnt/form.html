@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Baskervville+SC&display=swap" rel="stylesheet">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>FORMULARIO</h1>
+    </header>
+
+    <main>
+        <h2>Registro nuevo estudiante</h2>
+        <form class="My-form" id="form">
+
+            <div>
+                <div class="form-control">
+                    <label>Name</label>
+                    <input type="text" id="txtName" value="Maromas">
+                </div>
+            </div>
+            <div class="form-control">
+                <label>Age</label>
+                <input type="number" id="txtAge">
+            </div>
+            </div>
+            <div>
+                <div class="form-control">
+                    <label>Matricula</label>
+                    <input type="number" id="txtMatricula">
+                </div>
+            </div>
+            <div>
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="email" id="txtEmail">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label>Clave de acceso</label>
+                    <input type="password" id="txtPassword" required>
+                </div>
+            </div>
+            <input class="btn" type="submit" value="Enviar">
+        </form>
+
+    </main>
+    <section>
+        <h2>Estudiantes registrados</h2>
+        <table class="my-table" id="tblStudents">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Matricula</th>
+                    <th>Email</th>
+                    <th>A.K.A</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dali</td>
+                    <td class="Age">22</td>
+                    <td>02200037</td>
+                        <td>dali.basilio@uabc.edu.mx</td>
+                        <td>Litchi</td>
+                </tr>
+                <tr>
+                    <td>Becerra</td>
+                    <td>20</td>
+                    <td>0000001</td>
+                        <td>Jose.eduardo@uabc.edu.mx</td>
+                <td>Maromas</td>
+                </tr>
+
+            </tbody>
+
+    </section>
+</body>
+
+</html>

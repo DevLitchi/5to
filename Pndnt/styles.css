@@ -1,0 +1,128 @@
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.baskervville-sc-regular {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form-control {
+    background-color: #f8f9fa;
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.form-control {
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.form-control label{
+    display: block;
+    font-size: 1.6rem;
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    padding: 3px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.form-control input{
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.my-form {
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: auto;
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section{
+    background-color: antiquewhite;
+}
+
+.my-table {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+}
+
+.my-table th {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    text-align: left;
+    border-collapse : collapse;
+}
+.my-table tr {
+    border-bottom: 1px solid #333;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    text-align: left;
+    width: 15rem;
+    padding: 3px;
+}
+.my-table td {
+    border-bottom: 1px solid #333;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    text-align: left;
+    width: 15rem;
+    padding: 3px;
+}
+.my-table td {
+    border-bottom: 1px solid #333;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    text-align: left;
+    width: 15rem;
+    padding: 3px;
+}
+.my-table age{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    text-align: center;
+    width: 15rem;
+    padding: 3px;
+}

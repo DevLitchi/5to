@@ -1,0 +1,138 @@
+/* Reseteo básico y configuración de estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ecd288;
+    color: #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    flex: 1; /* Hace que el contenido principal ocupe el espacio disponible */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.content {
+    flex: 3;
+    min-width: 300px; /* Asegura que el contenido principal tenga un ancho mínimo */
+}
+
+.featured {
+    background-color: #ecd288;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.secondary {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que las secciones secundarias se envuelvan en pantallas pequeñas */
+}
+
+.secondary .article {
+    background-color: #ecd288;
+    padding: 20px;
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px; /* Añade espacio en la parte inferior en caso de que se envuelvan */
+    min-width: 250px; /* Asegura un ancho mínimo para los artículos secundarios */
+}
+
+.secondary .article:last-child {
+    margin-right: 0;
+}
+
+.sidebar {
+    flex: 5
+    background-color: #000;
+    padding: 5%;
+    min-width: 20px; /* Asegura un ancho mínimo para la barra lateral */
+}
+
+footer {
+    background-color: #ecd288;
+    color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto; /* Empuja el footer hacia abajo si hay espacio disponible */
+    flex-wrap: wrap; /* Permite que los elementos del footer se envuelvan en pantallas pequeñas */
+}
+
+footer div {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 150px; /* Asegura un ancho mínimo para las secciones del footer */
+}
+
+footer div:last-child {
+    margin-right: 0;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Cambia el layout a una columna en pantallas pequeñas */
+    }
+
+    .sidebar {
+        margin-left: 0;
+        margin-top: 20px; /* Añade espacio entre el contenido principal y la barra lateral en pantallas pequeñas */
+    }
+
+    .secondary {
+        flex-direction: column;
+    }
+}

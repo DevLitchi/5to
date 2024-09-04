@@ -1,0 +1,6 @@
+Propiedades para formmularios
+Despues de un label va el input que dictara que tipo de dato sera ingresado en este caso supongamos que tenemos una clave de acceso o contraseña
+El input sera de tipo pasword y el id que es el nombre que se usara para distinguirlo sera la palabnra txt seguido de el para que se usara en este caso sera txtclave
+El Value despues de un input es para predeterminar el valor que tendra el input en este caso sera una cadena vacia
+El name es el nombre que se usara para enviar los datos a la base de datos en este caso sera clave
+Display es para modificar la forma en que se mostrara el input en este caso sera block

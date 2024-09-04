@@ -1,0 +1,63 @@
+/* img{
+    display: block;
+}
+
+h1, h2{
+    background-color: rgb(218, 190, 154);
+    text-align: left;
+    display: inline;
+
+} */
+/* 
+Si quiero que todo se vea afectado es con global */
+p{
+    line-height: 2;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    background-color: rgb(218, 190, 154);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+header img{
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5%;
+    overflow: hidden;
+    box-shadow: 10 10 100px rgba(255, 255, 255, 0.2);
+
+}
+nav a{
+    margin-right: 2rem;
+    font-size: 20px;
+    color: #000;
+}
+.gallery-conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.gallery-item{
+    margin: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

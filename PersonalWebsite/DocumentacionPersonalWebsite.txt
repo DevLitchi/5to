@@ -1,0 +1,3 @@
+Documentacion HTML:
+<!DOCTYPE html> es el comienzo de un documento HTML. 
+Sirve para indicarle al navegador que el documento es de tipo HTML5.
