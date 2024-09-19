@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+img{
+    max-width: 50%;
+}
+
+.imgContainer{
+    width: 20rem;
+    align-content: center;
+}
+
+.statusItems{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+}
+
+.btnItems{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 2rem;
+    /* border-radius: 1000px; */
+}
+
+.statusContainer{
+    align-content: center;
+}   

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Student Registration System</title>
+</head>
+
+<body>
+    <div id="total">
+        <div class="container">
+            <header class="text-center mb-4">
+                <h1>Student Registration System</h1>
+            </header>
+
+            <main>
+                <section class="mb-4">
+                    <h2>New Student Registration</h2>
+                    <form>
+                        <div class="form-group">
+                            <label>Student Name:</label>
+                            <input class="form-control" type="text" minlength="3" maxlength="100" id="txtName" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Age:</label>
+                            <input class="form-control" type="number" id="txtAge" min="0" max="50" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Gender:</label><br>
+                            <input type="radio" name="gender" value="Male" /> Male
+                            <input type="radio" name="gender" value="Female" /> Female
+                            <input type="radio" name="gender" value="Other" /> Other
+                        </div>
+                        <div class="form-group">
+                            <label>Grade 1:</label>
+                            <input class="form-control" type="number" id="txtGrade1" min="0" max="100" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Grade 2:</label>
+                            <input class="form-control" type="number" id="txtGrade2" min="0" max="100" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Grade 3:</label>
+                            <input class="form-control" type="number" id="txtGrade3" min="0" max="100" required />
+                        </div>
+                        <button type="button" id="btnRegister" class="btn btn-primary">Register</button>
+                    </form>
+                </section>
+
+                <section>
+                    <h2>Student List</h2>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Student Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Grade 1</th>
+                                <th>Grade 2</th>
+                                <th>Grade 3</th>
+                                <th>Average</th> <!-- Columna de promedio -->
+                                <th>Actions</th> <!-- Columna de acciones para el botón de eliminar -->
+                            </tr>
+                        </thead>
+                        <tbody id="tblStudents"></tbody>
+                    </table>
+                </section>
+                
+            </main>
+        </div>
+    </div>
+
+    <script src="./scripts/register.js"></script>
+</body>
+
+</html>
